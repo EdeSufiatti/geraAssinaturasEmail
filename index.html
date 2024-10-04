@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Assinatura de E-mail</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <h1>Gerador de Assinatura de E-mail</h1>
+  
+  <form id="signature-form">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name">
+    
+    <label for="role">Função:</label>
+    <input type="text" id="role" name="role">
+
+    <label for="phone">Telefone:</label>
+    <input type="text" id="phone" name="phone">
+
+    <label for="email">E-mail:</label>
+    <input type="text" id="email" name="email">
+
+    <label for="address">Endereço:</label>
+    <input type="text" id="address" name="address">
+
+    <label for="website">Site:</label>
+    <input type="text" id="website" name="website">
+    
+    <button type="button" onclick="generateSignature()">Gerar Assinatura</button>
+  </form>
+
+  <!-- O SVG fornecido é carregado aqui -->
+  <div id="signature-preview">
+    <object id="svg-container" type="image/svg+xml" data="./assets/ass.svg" style="width: 100%; height: auto;"></object>
+  </div>
+
+  <button id="download-btn" style="display:none;">Baixar Assinatura</button>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>

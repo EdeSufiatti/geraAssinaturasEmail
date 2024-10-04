@@ -1,0 +1,62 @@
+/* RESET global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* FIM RESET GLOBAL */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #signature-preview {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    width: 500px;
+    height: 200px;
+  }
+  
